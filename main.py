@@ -1,102 +1,150 @@
 import csv
+import random
 import time
 import logging
+import requests
+import json
+from config import Config
+import multiprocessing
 
 
 def get_logger(
-    name: str = "log",
-    format: str = "%(asctime)s: %(message)s",
+    path: str,
+    *,
+    name = "log",
+    format = "%(asctime)s: %(message)s",
+    console = True
 ) -> logging.Logger:
     logger = logging.getLogger(name)
     logger.setLevel(logging.INFO)
 
     formatter = logging.Formatter(format)
 
-    console_handler = logging.StreamHandler()
-    console_handler.setFormatter(formatter)
-    logger.addHandler(console_handler)
-
-    file_handler = logging.FileHandler(f"{name}.log", mode="w")
+    file_handler = logging.FileHandler(path, mode="w")
     file_handler.setFormatter(formatter)
     logger.addHandler(file_handler)
+
+    if console:
+        console_handler = logging.StreamHandler()
+        console_handler.setFormatter(formatter)
+        logger.addHandler(console_handler)
 
     return logger
 
 
 def read_csv(
-    file_path="Copia di Estensimetro Esempio Letture.csv"
+    file_path: str
 ) -> list[list[str]]:
     with open(file_path, 'r') as file:
-        reader = csv.reader(file, delimiter=",")
+        reader = csv.reader(file, delimiter=";")
         data = list(reader)
 
     return data
 
 
-def get_rcl(
-    r_meas: float,
-    a: float = 0.0,
-    b: float = 0.0
-) -> float:
-    rcl = a * r_meas + b
+def emulate_readings(
+    readings_queue: multiprocessing.Queue,
+    csv_path: str,
+    logger_path: str,
+    sleep_time: float
+):
+    logger = get_logger(logger_path, name='emulate_readings', console=False)
+    data = read_csv(csv_path)
+    headers = data[0]
+    data = data[1:]
+    index = 1
+    i = 0
 
-    return rcl
+    while True:
+        #time.sleep(random.randint(0, 5))
+        logger.info(f'Analyzing item n.{index}')
 
+        d = { k: v for k, v in zip(headers, data[i]) if k != '' }
+        logger.info(f'data: {json.dumps(d, indent=2)}')
 
-def get_rcp(
-    r_meas: float,
-    a: float = 0.0,
-    b: float = 0.0,
-    c: float = 0.0,
-    d: float = 0.0
-) -> float:
-    rcp = a * r_meas ** 3 + b * r_meas ** 2 + c * r_meas + d
+        readings_queue.put(d | { '_Index':  index })
+        logger.info('Sended data to main process...')
 
-    return rcp
+        index += 1
+        i += 1
 
+        if i == len(data) - 1:
+            i = 0
 
-def get_criteria() -> bool:
-    """Return True if |mpe_plus_u| < |mpe_pol| else False"""
-    mpe_plus_u = 0.0867
-    mpe_pol = 0.3
-
-    if abs(mpe_plus_u) < abs(mpe_pol):
-        return True
-    else:
-        return False
+        logger.info(f'Process will procede to sleep for {sleep_time}s')
+        logger.info('')
+        time.sleep(sleep_time)
 
 
 if __name__ == "__main__":
-    logger = get_logger()
-    timer = time.time() - 30
-    index = 1
-    while True:
+    config = Config()
+    logger = get_logger(config.loggger_path, name='main')
+    emulate_readings_process = None
 
-        # wait 30 sec betwheen one run and another one
-        if time.time() - timer < 30.0:
-            continue
-        else:
-            logger.info(f"Started cycle n.{index}")
-            index += 1
+    try:
+        readings_queue = multiprocessing.Queue()
+        emulate_readings_process = multiprocessing.Process(target=emulate_readings, args=[readings_queue, config.csv_path, config.subprocess_loggger_path, config.sleep_betwheen_runs])
+        emulate_readings_process.start()
+    except:
+        logger.error('Couldn\'t start emulate_readings subprocess, aborting the programm...')
+        while emulate_readings_process is not None and emulate_readings_process.is_alive():
+            emulate_readings_process.terminate()
+            emulate_readings_process.join(timeout=60)
+        exit(1)
 
-        data = read_csv()
-        logger.info("Read csv")
+    try:
+        while True:
+            if not readings_queue.empty():
+                data = readings_queue.get()
+                index = data['_Index']
+                logger.info(f"Received data with index n.{index}: {json.dumps(data, indent=2)}")
 
-        # exluding the headers row with [1:]
-        for i, row in enumerate(data[1:]):
-            logger.info("")
-            logger.info(f"Analyzing row n.{i+1}")
+                try:
+                    logger.info('Calculating R_meas, Rcl and Rcp...')
+                    r_meas = float(data["Value"].replace(',', '.'))
+                    rcl = config.linear_transformation(r_meas)
+                    rcp = config.polynomial_transformation(r_meas)
 
-            value = float(row[data[0].index("Value")])
-            rcl = get_rcl(value)
-            rcp = get_rcp(value)
+                    logger.info(f"R_meas: {r_meas}")
+                    logger.info(f"Rcl: {rcl}")
+                    logger.info(f"Rcp: {rcp}")
 
-            logger.info(f"Value: {value}, Rcl: {rcl}, Rcp: {rcp}")
+                    try:
+                        logger.info('Sending request to server to comunicate results...')
+                        req = requests.post(
+                            config.url(data['Access token']),
+                            json={
+                                "ts": data['Timestamp'],
+                                "raw_data": r_meas,
+                                "results": {
+                                    "rcl": rcl,
+                                    "rcp": rcp
+                                }
+                            },
+                        )
 
-            criteria = get_criteria()
-            logger.info(f"Criteria: {criteria}")
+                        logger.info(f'Request returned status code: {req.status_code}')
+                        if req.status_code != 200:
+                            logger.error('ERROR: Request wasn\'t succesfull as it returned a status code different from "200":')
+                            logger.info(json.dumps(json.loads(req.text), indent=2))
 
-        logger.info("Finished cycle")
-        logger.info("")
-        logger.info("")
-        timer = time.time()
+                        logger.info('Finished readings')
+
+                    except requests.exceptions.MissingSchema:
+                        logger.error('ERROR: The url set in config.py is not valid')
+
+                except Exception as e:
+                    logger.info('')
+                    logger.info('Exception raised while calculating R_meas, Rcl and Rcp:')
+                    logger.exception(e)
+
+                logger.info("")
+                logger.info("")
+
+    except Exception as e:
+        logger.info('Process raised an error')
+        logger.exception(e)
+    finally:
+        while emulate_readings_process.is_alive():
+            emulate_readings_process.terminate()
+            emulate_readings_process.join(timeout=60)

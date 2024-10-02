@@ -1,0 +1,209 @@
+2024-10-02 17:22:14,580: Analyzing item n.1
+2024-10-02 17:22:14,581: data: {
+  "Timestamp": "1690755893624",
+  "Date": "30/07/2023",
+  "Time": "22:24:53",
+  "Value": "4942,396484",
+  "Access token": "test_device_2024"
+}
+2024-10-02 17:22:14,581: Sended data to main process...
+2024-10-02 17:22:14,582: Process will procede to sleep for 10s
+2024-10-02 17:22:14,582: 
+2024-10-02 17:22:24,590: Analyzing item n.2
+2024-10-02 17:22:24,590: data: {
+  "Timestamp": "1690748693588",
+  "Date": "30/07/2023",
+  "Time": "20:24:53",
+  "Value": "4942,158203",
+  "Access token": "test_device_2024"
+}
+2024-10-02 17:22:24,590: Sended data to main process...
+2024-10-02 17:22:24,591: Process will procede to sleep for 10s
+2024-10-02 17:22:24,591: 
+2024-10-02 17:22:34,604: Analyzing item n.3
+2024-10-02 17:22:34,604: data: {
+  "Timestamp": "1690741493520",
+  "Date": "30/07/2023",
+  "Time": "18:24:53",
+  "Value": "4939,23291",
+  "Access token": "test_device_2024"
+}
+2024-10-02 17:22:34,604: Sended data to main process...
+2024-10-02 17:22:34,604: Process will procede to sleep for 10s
+2024-10-02 17:22:34,604: 
+2024-10-02 17:22:44,608: Analyzing item n.4
+2024-10-02 17:22:44,608: data: {
+  "Timestamp": "1690734293452",
+  "Date": "30/07/2023",
+  "Time": "16:24:53",
+  "Value": "4939,208008",
+  "Access token": "test_device_2024"
+}
+2024-10-02 17:22:44,608: Sended data to main process...
+2024-10-02 17:22:44,608: Process will procede to sleep for 10s
+2024-10-02 17:22:44,608: 
+2024-10-02 17:22:54,623: Analyzing item n.5
+2024-10-02 17:22:54,623: data: {
+  "Timestamp": "1690727093408",
+  "Date": "30/07/2023",
+  "Time": "14:24:53",
+  "Value": "4937,298828",
+  "Access token": "test_device_2024"
+}
+2024-10-02 17:22:54,623: Sended data to main process...
+2024-10-02 17:22:54,623: Process will procede to sleep for 10s
+2024-10-02 17:22:54,624: 
+2024-10-02 17:23:04,630: Analyzing item n.6
+2024-10-02 17:23:04,630: data: {
+  "Timestamp": "1690719892198",
+  "Date": "30/07/2023",
+  "Time": "12:24:52",
+  "Value": "4930,313477",
+  "Access token": "test_device_2024"
+}
+2024-10-02 17:23:04,630: Sended data to main process...
+2024-10-02 17:23:04,631: Process will procede to sleep for 10s
+2024-10-02 17:23:04,631: 
+2024-10-02 17:23:14,646: Analyzing item n.7
+2024-10-02 17:23:14,646: data: {
+  "Timestamp": "1690712692755",
+  "Date": "30/07/2023",
+  "Time": "10:24:52",
+  "Value": "4938,245605",
+  "Access token": "test_device_2024"
+}
+2024-10-02 17:23:14,646: Sended data to main process...
+2024-10-02 17:23:14,646: Process will procede to sleep for 10s
+2024-10-02 17:23:14,646: 
+2024-10-02 17:23:24,652: Analyzing item n.8
+2024-10-02 17:23:24,652: data: {
+  "Timestamp": "1690705493254",
+  "Date": "30/07/2023",
+  "Time": "08:24:53",
+  "Value": "4943,092285",
+  "Access token": "test_device_2024"
+}
+2024-10-02 17:23:24,652: Sended data to main process...
+2024-10-02 17:23:24,653: Process will procede to sleep for 10s
+2024-10-02 17:23:24,653: 
+2024-10-02 17:23:34,658: Analyzing item n.9
+2024-10-02 17:23:34,658: data: {
+  "Timestamp": "1690698294903",
+  "Date": "30/07/2023",
+  "Time": "06:24:54",
+  "Value": "4945,09082",
+  "Access token": "test_device_2024"
+}
+2024-10-02 17:23:34,658: Sended data to main process...
+2024-10-02 17:23:34,658: Process will procede to sleep for 10s
+2024-10-02 17:23:34,658: 
+2024-10-02 17:23:44,662: Analyzing item n.10
+2024-10-02 17:23:44,662: data: {
+  "Timestamp": "1690691093161",
+  "Date": "30/07/2023",
+  "Time": "04:24:53",
+  "Value": "4945,934082",
+  "Access token": "test_device_2024"
+}
+2024-10-02 17:23:44,662: Sended data to main process...
+2024-10-02 17:23:44,662: Process will procede to sleep for 10s
+2024-10-02 17:23:44,663: 
+2024-10-02 17:23:54,676: Analyzing item n.11
+2024-10-02 17:23:54,676: data: {
+  "Timestamp": "1690683892525",
+  "Date": "30/07/2023",
+  "Time": "02:24:52",
+  "Value": "4946,466797",
+  "Access token": "test_device_2024"
+}
+2024-10-02 17:23:54,676: Sended data to main process...
+2024-10-02 17:23:54,676: Process will procede to sleep for 10s
+2024-10-02 17:23:54,676: 
+2024-10-02 17:24:04,689: Analyzing item n.12
+2024-10-02 17:24:04,689: data: {
+  "Timestamp": "1690755893624",
+  "Date": "30/07/2023",
+  "Time": "22:24:53",
+  "Value": "4942,396484",
+  "Access token": "test_device_2024"
+}
+2024-10-02 17:24:04,689: Sended data to main process...
+2024-10-02 17:24:04,689: Process will procede to sleep for 10s
+2024-10-02 17:24:04,690: 
+2024-10-02 17:24:14,692: Analyzing item n.13
+2024-10-02 17:24:14,692: data: {
+  "Timestamp": "1690748693588",
+  "Date": "30/07/2023",
+  "Time": "20:24:53",
+  "Value": "4942,158203",
+  "Access token": "test_device_2024"
+}
+2024-10-02 17:24:14,692: Sended data to main process...
+2024-10-02 17:24:14,692: Process will procede to sleep for 10s
+2024-10-02 17:24:14,692: 
+2024-10-02 17:24:24,694: Analyzing item n.14
+2024-10-02 17:24:24,694: data: {
+  "Timestamp": "1690741493520",
+  "Date": "30/07/2023",
+  "Time": "18:24:53",
+  "Value": "4939,23291",
+  "Access token": "test_device_2024"
+}
+2024-10-02 17:24:24,694: Sended data to main process...
+2024-10-02 17:24:24,694: Process will procede to sleep for 10s
+2024-10-02 17:24:24,694: 
+2024-10-02 17:24:34,700: Analyzing item n.15
+2024-10-02 17:24:34,700: data: {
+  "Timestamp": "1690734293452",
+  "Date": "30/07/2023",
+  "Time": "16:24:53",
+  "Value": "4939,208008",
+  "Access token": "test_device_2024"
+}
+2024-10-02 17:24:34,700: Sended data to main process...
+2024-10-02 17:24:34,700: Process will procede to sleep for 10s
+2024-10-02 17:24:34,701: 
+2024-10-02 17:24:44,708: Analyzing item n.16
+2024-10-02 17:24:44,708: data: {
+  "Timestamp": "1690727093408",
+  "Date": "30/07/2023",
+  "Time": "14:24:53",
+  "Value": "4937,298828",
+  "Access token": "test_device_2024"
+}
+2024-10-02 17:24:44,709: Sended data to main process...
+2024-10-02 17:24:44,709: Process will procede to sleep for 10s
+2024-10-02 17:24:44,709: 
+2024-10-02 17:24:54,734: Analyzing item n.17
+2024-10-02 17:24:54,735: data: {
+  "Timestamp": "1690719892198",
+  "Date": "30/07/2023",
+  "Time": "12:24:52",
+  "Value": "4930,313477",
+  "Access token": "test_device_2024"
+}
+2024-10-02 17:24:54,735: Sended data to main process...
+2024-10-02 17:24:54,736: Process will procede to sleep for 10s
+2024-10-02 17:24:54,737: 
+2024-10-02 17:25:04,742: Analyzing item n.18
+2024-10-02 17:25:04,742: data: {
+  "Timestamp": "1690712692755",
+  "Date": "30/07/2023",
+  "Time": "10:24:52",
+  "Value": "4938,245605",
+  "Access token": "test_device_2024"
+}
+2024-10-02 17:25:04,742: Sended data to main process...
+2024-10-02 17:25:04,742: Process will procede to sleep for 10s
+2024-10-02 17:25:04,743: 
+2024-10-02 17:25:14,749: Analyzing item n.19
+2024-10-02 17:25:14,749: data: {
+  "Timestamp": "1690705493254",
+  "Date": "30/07/2023",
+  "Time": "08:24:53",
+  "Value": "4943,092285",
+  "Access token": "test_device_2024"
+}
+2024-10-02 17:25:14,749: Sended data to main process...
+2024-10-02 17:25:14,749: Process will procede to sleep for 10s
+2024-10-02 17:25:14,749: 

@@ -1,0 +1,323 @@
+2024-10-02 17:22:14,582: Received data with index n.1: {
+  "Timestamp": "1690755893624",
+  "Date": "30/07/2023",
+  "Time": "22:24:53",
+  "Value": "4942,396484",
+  "Access token": "test_device_2024",
+  "_Index": 1
+}
+2024-10-02 17:22:14,583: Calculating R_meas, Rcl and Rcp...
+2024-10-02 17:22:14,583: R_meas: 4942.396484
+2024-10-02 17:22:14,583: Rcl: 59.017039109148
+2024-10-02 17:22:14,583: Rcp: 58.9991184106063
+2024-10-02 17:22:14,583: Sending request to server to comunicate results...
+2024-10-02 17:22:15,123: Request returned status code: 200
+2024-10-02 17:22:15,123: Finished readings
+2024-10-02 17:22:15,123: 
+2024-10-02 17:22:15,124: 
+2024-10-02 17:22:24,592: Received data with index n.2: {
+  "Timestamp": "1690748693588",
+  "Date": "30/07/2023",
+  "Time": "20:24:53",
+  "Value": "4942,158203",
+  "Access token": "test_device_2024",
+  "_Index": 2
+}
+2024-10-02 17:22:24,592: Calculating R_meas, Rcl and Rcp...
+2024-10-02 17:22:24,592: R_meas: 4942.158203
+2024-10-02 17:22:24,592: Rcl: 59.010689635340995
+2024-10-02 17:22:24,593: Rcp: 58.99278141263021
+2024-10-02 17:22:24,593: Sending request to server to comunicate results...
+2024-10-02 17:22:25,159: Request returned status code: 200
+2024-10-02 17:22:25,160: Finished readings
+2024-10-02 17:22:25,160: 
+2024-10-02 17:22:25,160: 
+2024-10-02 17:22:34,605: Received data with index n.3: {
+  "Timestamp": "1690741493520",
+  "Date": "30/07/2023",
+  "Time": "18:24:53",
+  "Value": "4939,23291",
+  "Access token": "test_device_2024",
+  "_Index": 3
+}
+2024-10-02 17:22:34,605: Calculating R_meas, Rcl and Rcp...
+2024-10-02 17:22:34,605: R_meas: 4939.23291
+2024-10-02 17:22:34,605: Rcl: 58.932739352769985
+2024-10-02 17:22:34,605: Rcp: 58.91498428526846
+2024-10-02 17:22:34,605: Sending request to server to comunicate results...
+2024-10-02 17:22:35,193: Request returned status code: 200
+2024-10-02 17:22:35,193: Finished readings
+2024-10-02 17:22:35,194: 
+2024-10-02 17:22:35,194: 
+2024-10-02 17:22:44,608: Received data with index n.4: {
+  "Timestamp": "1690734293452",
+  "Date": "30/07/2023",
+  "Time": "16:24:53",
+  "Value": "4939,208008",
+  "Access token": "test_device_2024",
+  "_Index": 4
+}
+2024-10-02 17:22:44,608: Calculating R_meas, Rcl and Rcp...
+2024-10-02 17:22:44,609: R_meas: 4939.208008
+2024-10-02 17:22:44,609: Rcl: 58.93207578917598
+2024-10-02 17:22:44,609: Rcp: 58.91432202538029
+2024-10-02 17:22:44,609: Sending request to server to comunicate results...
+2024-10-02 17:22:44,978: Request returned status code: 200
+2024-10-02 17:22:44,978: Finished readings
+2024-10-02 17:22:44,979: 
+2024-10-02 17:22:44,979: 
+2024-10-02 17:22:54,624: Received data with index n.5: {
+  "Timestamp": "1690727093408",
+  "Date": "30/07/2023",
+  "Time": "14:24:53",
+  "Value": "4937,298828",
+  "Access token": "test_device_2024",
+  "_Index": 5
+}
+2024-10-02 17:22:54,624: Calculating R_meas, Rcl and Rcp...
+2024-10-02 17:22:54,624: R_meas: 4937.298828
+2024-10-02 17:22:54,625: Rcl: 58.88120186971601
+2024-10-02 17:22:54,625: Rcp: 58.86354805540189
+2024-10-02 17:22:54,625: Sending request to server to comunicate results...
+2024-10-02 17:22:55,061: Request returned status code: 200
+2024-10-02 17:22:55,061: Finished readings
+2024-10-02 17:22:55,062: 
+2024-10-02 17:22:55,062: 
+2024-10-02 17:23:04,631: Received data with index n.6: {
+  "Timestamp": "1690719892198",
+  "Date": "30/07/2023",
+  "Time": "12:24:52",
+  "Value": "4930,313477",
+  "Access token": "test_device_2024",
+  "_Index": 6
+}
+2024-10-02 17:23:04,632: Calculating R_meas, Rcl and Rcp...
+2024-10-02 17:23:04,632: R_meas: 4930.313477
+2024-10-02 17:23:04,632: Rcl: 58.69506322161898
+2024-10-02 17:23:04,632: Rcp: 58.677775055486435
+2024-10-02 17:23:04,633: Sending request to server to comunicate results...
+2024-10-02 17:23:05,200: Request returned status code: 200
+2024-10-02 17:23:05,201: Finished readings
+2024-10-02 17:23:05,201: 
+2024-10-02 17:23:05,202: 
+2024-10-02 17:23:14,647: Received data with index n.7: {
+  "Timestamp": "1690712692755",
+  "Date": "30/07/2023",
+  "Time": "10:24:52",
+  "Value": "4938,245605",
+  "Access token": "test_device_2024",
+  "_Index": 7
+}
+2024-10-02 17:23:14,647: Calculating R_meas, Rcl and Rcp...
+2024-10-02 17:23:14,647: R_meas: 4938.245605
+2024-10-02 17:23:14,647: Rcl: 58.90643063643499
+2024-10-02 17:23:14,647: Rcp: 58.888727257077946
+2024-10-02 17:23:14,647: Sending request to server to comunicate results...
+2024-10-02 17:23:15,130: Request returned status code: 200
+2024-10-02 17:23:15,130: Finished readings
+2024-10-02 17:23:15,130: 
+2024-10-02 17:23:15,130: 
+2024-10-02 17:23:24,653: Received data with index n.8: {
+  "Timestamp": "1690705493254",
+  "Date": "30/07/2023",
+  "Time": "08:24:53",
+  "Value": "4943,092285",
+  "Access token": "test_device_2024",
+  "_Index": 8
+}
+2024-10-02 17:23:24,653: Calculating R_meas, Rcl and Rcp...
+2024-10-02 17:23:24,653: R_meas: 4943.092285
+2024-10-02 17:23:24,653: Rcl: 59.035580118394975
+2024-10-02 17:23:24,653: Rcp: 59.017622988935
+2024-10-02 17:23:24,653: Sending request to server to comunicate results...
+2024-10-02 17:23:25,581: Request returned status code: 200
+2024-10-02 17:23:25,581: Finished readings
+2024-10-02 17:23:25,581: 
+2024-10-02 17:23:25,581: 
+2024-10-02 17:23:34,658: Received data with index n.9: {
+  "Timestamp": "1690698294903",
+  "Date": "30/07/2023",
+  "Time": "06:24:54",
+  "Value": "4945,09082",
+  "Access token": "test_device_2024",
+  "_Index": 9
+}
+2024-10-02 17:23:34,659: Calculating R_meas, Rcl and Rcp...
+2024-10-02 17:23:34,659: R_meas: 4945.09082
+2024-10-02 17:23:34,659: Rcl: 59.088835080539994
+2024-10-02 17:23:34,659: Rcp: 59.07077330793042
+2024-10-02 17:23:34,659: Sending request to server to comunicate results...
+2024-10-02 17:23:35,101: Request returned status code: 200
+2024-10-02 17:23:35,102: Finished readings
+2024-10-02 17:23:35,102: 
+2024-10-02 17:23:35,102: 
+2024-10-02 17:23:44,664: Received data with index n.10: {
+  "Timestamp": "1690691093161",
+  "Date": "30/07/2023",
+  "Time": "04:24:53",
+  "Value": "4945,934082",
+  "Access token": "test_device_2024",
+  "_Index": 10
+}
+2024-10-02 17:23:44,664: Calculating R_meas, Rcl and Rcp...
+2024-10-02 17:23:44,664: R_meas: 4945.934082
+2024-10-02 17:23:44,664: Rcl: 59.11130548305398
+2024-10-02 17:23:44,665: Rcp: 59.093199555867685
+2024-10-02 17:23:44,665: Sending request to server to comunicate results...
+2024-10-02 17:23:45,239: Request returned status code: 200
+2024-10-02 17:23:45,239: Finished readings
+2024-10-02 17:23:45,240: 
+2024-10-02 17:23:45,240: 
+2024-10-02 17:23:54,676: Received data with index n.11: {
+  "Timestamp": "1690683892525",
+  "Date": "30/07/2023",
+  "Time": "02:24:52",
+  "Value": "4946,466797",
+  "Access token": "test_device_2024",
+  "_Index": 11
+}
+2024-10-02 17:23:54,677: Calculating R_meas, Rcl and Rcp...
+2024-10-02 17:23:54,677: R_meas: 4946.466797
+2024-10-02 17:23:54,677: Rcl: 59.12550073965899
+2024-10-02 17:23:54,677: Rcp: 59.107366918221786
+2024-10-02 17:23:54,677: Sending request to server to comunicate results...
+2024-10-02 17:23:55,177: Request returned status code: 200
+2024-10-02 17:23:55,178: Finished readings
+2024-10-02 17:23:55,178: 
+2024-10-02 17:23:55,178: 
+2024-10-02 17:24:04,690: Received data with index n.12: {
+  "Timestamp": "1690755893624",
+  "Date": "30/07/2023",
+  "Time": "22:24:53",
+  "Value": "4942,396484",
+  "Access token": "test_device_2024",
+  "_Index": 12
+}
+2024-10-02 17:24:04,690: Calculating R_meas, Rcl and Rcp...
+2024-10-02 17:24:04,690: R_meas: 4942.396484
+2024-10-02 17:24:04,690: Rcl: 59.017039109148
+2024-10-02 17:24:04,690: Rcp: 58.9991184106063
+2024-10-02 17:24:04,690: Sending request to server to comunicate results...
+2024-10-02 17:24:05,413: Request returned status code: 200
+2024-10-02 17:24:05,414: Finished readings
+2024-10-02 17:24:05,414: 
+2024-10-02 17:24:05,415: 
+2024-10-02 17:24:14,693: Received data with index n.13: {
+  "Timestamp": "1690748693588",
+  "Date": "30/07/2023",
+  "Time": "20:24:53",
+  "Value": "4942,158203",
+  "Access token": "test_device_2024",
+  "_Index": 13
+}
+2024-10-02 17:24:14,693: Calculating R_meas, Rcl and Rcp...
+2024-10-02 17:24:14,693: R_meas: 4942.158203
+2024-10-02 17:24:14,693: Rcl: 59.010689635340995
+2024-10-02 17:24:14,693: Rcp: 58.99278141263021
+2024-10-02 17:24:14,694: Sending request to server to comunicate results...
+2024-10-02 17:24:15,244: Request returned status code: 200
+2024-10-02 17:24:15,244: Finished readings
+2024-10-02 17:24:15,244: 
+2024-10-02 17:24:15,245: 
+2024-10-02 17:24:24,694: Received data with index n.14: {
+  "Timestamp": "1690741493520",
+  "Date": "30/07/2023",
+  "Time": "18:24:53",
+  "Value": "4939,23291",
+  "Access token": "test_device_2024",
+  "_Index": 14
+}
+2024-10-02 17:24:24,695: Calculating R_meas, Rcl and Rcp...
+2024-10-02 17:24:24,695: R_meas: 4939.23291
+2024-10-02 17:24:24,695: Rcl: 58.932739352769985
+2024-10-02 17:24:24,695: Rcp: 58.91498428526846
+2024-10-02 17:24:24,695: Sending request to server to comunicate results...
+2024-10-02 17:24:25,278: Request returned status code: 200
+2024-10-02 17:24:25,279: Finished readings
+2024-10-02 17:24:25,279: 
+2024-10-02 17:24:25,279: 
+2024-10-02 17:24:34,701: Received data with index n.15: {
+  "Timestamp": "1690734293452",
+  "Date": "30/07/2023",
+  "Time": "16:24:53",
+  "Value": "4939,208008",
+  "Access token": "test_device_2024",
+  "_Index": 15
+}
+2024-10-02 17:24:34,701: Calculating R_meas, Rcl and Rcp...
+2024-10-02 17:24:34,701: R_meas: 4939.208008
+2024-10-02 17:24:34,701: Rcl: 58.93207578917598
+2024-10-02 17:24:34,701: Rcp: 58.91432202538029
+2024-10-02 17:24:34,701: Sending request to server to comunicate results...
+2024-10-02 17:24:35,314: Request returned status code: 200
+2024-10-02 17:24:35,314: Finished readings
+2024-10-02 17:24:35,314: 
+2024-10-02 17:24:35,315: 
+2024-10-02 17:24:44,709: Received data with index n.16: {
+  "Timestamp": "1690727093408",
+  "Date": "30/07/2023",
+  "Time": "14:24:53",
+  "Value": "4937,298828",
+  "Access token": "test_device_2024",
+  "_Index": 16
+}
+2024-10-02 17:24:44,709: Calculating R_meas, Rcl and Rcp...
+2024-10-02 17:24:44,710: R_meas: 4937.298828
+2024-10-02 17:24:44,710: Rcl: 58.88120186971601
+2024-10-02 17:24:44,710: Rcp: 58.86354805540189
+2024-10-02 17:24:44,710: Sending request to server to comunicate results...
+2024-10-02 17:24:45,250: Request returned status code: 200
+2024-10-02 17:24:45,250: Finished readings
+2024-10-02 17:24:45,250: 
+2024-10-02 17:24:45,251: 
+2024-10-02 17:24:54,736: Received data with index n.17: {
+  "Timestamp": "1690719892198",
+  "Date": "30/07/2023",
+  "Time": "12:24:52",
+  "Value": "4930,313477",
+  "Access token": "test_device_2024",
+  "_Index": 17
+}
+2024-10-02 17:24:54,737: Calculating R_meas, Rcl and Rcp...
+2024-10-02 17:24:54,737: R_meas: 4930.313477
+2024-10-02 17:24:54,738: Rcl: 58.69506322161898
+2024-10-02 17:24:54,738: Rcp: 58.677775055486435
+2024-10-02 17:24:54,738: Sending request to server to comunicate results...
+2024-10-02 17:24:55,282: Request returned status code: 200
+2024-10-02 17:24:55,283: Finished readings
+2024-10-02 17:24:55,283: 
+2024-10-02 17:24:55,283: 
+2024-10-02 17:25:04,743: Received data with index n.18: {
+  "Timestamp": "1690712692755",
+  "Date": "30/07/2023",
+  "Time": "10:24:52",
+  "Value": "4938,245605",
+  "Access token": "test_device_2024",
+  "_Index": 18
+}
+2024-10-02 17:25:04,743: Calculating R_meas, Rcl and Rcp...
+2024-10-02 17:25:04,743: R_meas: 4938.245605
+2024-10-02 17:25:04,743: Rcl: 58.90643063643499
+2024-10-02 17:25:04,754: Rcp: 58.888727257077946
+2024-10-02 17:25:04,755: Sending request to server to comunicate results...
+2024-10-02 17:25:05,319: Request returned status code: 200
+2024-10-02 17:25:05,321: Finished readings
+2024-10-02 17:25:05,321: 
+2024-10-02 17:25:05,321: 
+2024-10-02 17:25:14,749: Received data with index n.19: {
+  "Timestamp": "1690705493254",
+  "Date": "30/07/2023",
+  "Time": "08:24:53",
+  "Value": "4943,092285",
+  "Access token": "test_device_2024",
+  "_Index": 19
+}
+2024-10-02 17:25:14,750: Calculating R_meas, Rcl and Rcp...
+2024-10-02 17:25:14,750: R_meas: 4943.092285
+2024-10-02 17:25:14,750: Rcl: 59.035580118394975
+2024-10-02 17:25:14,750: Rcp: 59.017622988935
+2024-10-02 17:25:14,750: Sending request to server to comunicate results...
+2024-10-02 17:25:15,355: Request returned status code: 200
+2024-10-02 17:25:15,355: Finished readings
+2024-10-02 17:25:15,355: 
+2024-10-02 17:25:15,356: 
