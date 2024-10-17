@@ -56,7 +56,6 @@ def emulate_readings(
     i = 0
 
     while True:
-        #time.sleep(random.randint(0, 5))
         logger.info(f'Analyzing item n.{index}')
 
         d = { k: v for k, v in zip(headers, data[i]) if k != '' }

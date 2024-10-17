@@ -88,5 +88,6 @@ def timeseries_prediction():
     plt.legend()
     plt.show()
 
+
 if __name__ == '__main__':
     timeseries_prediction()
